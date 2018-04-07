@@ -1,0 +1,62 @@
+<div >
+<!--
+  <h2>Add new todo</h2>
+
+  <form #todoForm="ngForm" (submit)="addNewTodo()">
+    <div fxLayout="row" fxFill>
+      <md-input-container fxFlex>
+        <input name="todo" class="fill" placeholder="New todo item" required
+          mdInput
+          [(ngModel)]="todo"
+          #todoControl
+        />
+      </md-input-container>
+
+      <button type="submit" md-icon-button color="primary"
+        [disabled]="todoForm.invalid"
+      >
+        <md-icon>send</md-icon>
+      </button>
+    </div>
+  </form>
+
+-->
+
+  <div class="cards" >
+    <div class="card" style="margin: 10px"
+      *ngFor="let item of todos | async"
+      [class.active]="item.active"
+      [class.done]="item.done"
+      (mouseenter)="item.active = true"
+      (mouseleave)="item.active = false"
+    >
+      
+
+        
+          
+          
+          <!--
+          <img  [src]= "getImgURL('ds')"/>
+          <h3>{{item.status | eggStatus}}</h3>
+          <p>
+            {{item.eggTag}} @: {{((item.timestamp / 1000) | amFromUnix) | amDateFormat: 'DD.MM.YY HH:mm'}}
+          </p>
+        -->
+
+          <div class="" style="margin:10px;">
+            <img [src]= "getImgURL(item.imgURL)" alt="Avatar" style="width:100%; max-height:280px">
+            <div class="container" style="margin-top:20px; margin-bottom:20px">
+              <h3><b>{{item.status | eggStatus}}</b></h3> 
+              <p >
+                  {{item.eggTag}} @: {{((item.timestamp / 1000) | amFromUnix) | amDateFormat: 'DD.MM.YY HH:mm'}}
+              </p>
+            </div>
+          </div>
+
+        
+
+      
+
+    </div>
+  </div>
+</div>
