@@ -1,47 +1,12 @@
-# Foodiemate-web
+# Hachy-web
+This is the web-client that allows user of Hachy to view the cataloge of eggs being scanned by the Egg. By Azure Async, the webservice gets newly scanned egg as it is being created: 
 
-## Table of Contents
- * [What is this](#what-is-this)
- * [Demo](#demo)
- * [Used libraries, guides, etc.](#used-libraries-guides-etc)
-   * [Libraries](#libraries)
-   * [Guides](#guides)
-   * [Other resources](#other-resources)
- * [Installation](#installation)
-   * [Configuration](#configuration)
-   * [Firebase](#firebase)
- * [Development](#development)
- * [Tests](#tests)
-   * [Unit tests](#unit-tests)
-   * [e2e tests](#e2e-tests)
- * [Build](#build)
- * [Author](#author)
- * [License](#license)
 
-## What is this
-Just a small demo to show how to use [Angular2](https://angular.io/) + [Firebase](https://firebase.google.com/) + 
-[Google Material Design](https://www.google.com/design/spec/material-design/introduction.html) together. Currently
-this application display the egg status data online 
+## Screen shot
+![screenshot](https://user-images.githubusercontent.com/7799433/38462289-84e70c60-3ab2-11e8-9587-d5706807c0a2.png)
  
 ## Demo
-Demo of this application can be found from [TBD]().
-
-
-## Used libraries, guides, etc.
-
-### Libraries
- * [Angular 2](https://github.com/angular/angular)
- * [Material Design for Angular 2](https://github.com/angular/material2)
- * [AngularFire2](https://github.com/angular/angularfire2)
- * [angular2-moment](https://github.com/urish/angular2-moment)
- * [Angular-CLI](https://github.com/angular/angular-cli)
- 
-### Guides
- * [Angular 2 style guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
- 
-### Other resources
- * [Firebase](https://firebase.google.com/)
- * [Material design](https://www.google.com/design/spec/material-design/)
+Demo： [https://hachy.azurewebsites.net](https://hachy.azurewebsites.net).
 
 ## Installation
 First of all you have to install ```npm``` and ```node.js``` to your box. Installation instructions can
@@ -97,10 +62,12 @@ $ ng e2e
 ## Build
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Author
-Eugene Wang
+after ng build, to host the web app on azure, refer to (web-dist)[https://github.com/hachyEgg/hachy-web-dist.git]
+
+## Author and License 
+Copyright(c)2016 Eugene Wang [The MIT License (MIT)](LICENSE)
 
 ## License
-[The MIT License (MIT)](LICENSE)
 
-Copyright (c) 2016 Eugene Wang
+
+
