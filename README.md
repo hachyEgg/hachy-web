@@ -1,5 +1,5 @@
 # Hachy-web
-This is the web-client that allows user of Hachy to view the cataloge of eggs being scanned by the Egg. By Azure Async, the webservice gets newly scanned egg as it is being created: 
+This is the web-client that allows user of Hachy to view the cataloge of eggs being scanned by the Egg. By Azure Sync Service, the webservice gets newly scanned egg as it is being created: 
 
 
 ## Screen shot
@@ -66,8 +66,6 @@ after ng build, to host the web app on azure, refer to (web-dist)[https://github
 
 ## Author and License 
 Copyright(c)2016 Eugene Wang [The MIT License (MIT)](LICENSE)
-
-## License
 
 
 
