@@ -36,7 +36,6 @@ export class TodosComponent extends Animations implements OnInit  {
 
   public getImgURL(str: String){
     console.log("YEAH" + str)
-    //return "https://www.thesun.co.uk/wp-content/uploads/2016/04/1365039.main_image.jpg"
     return ("https://firebasestorage.googleapis.com/v0/b/foodiemate-41193.appspot.com/o/image%2F" + str+"?alt=media")
   }
   public addNewTodo() {
