@@ -34,7 +34,7 @@ export class LoginComponent extends Animations implements OnInit {
   public ngOnInit() {
     this.angularFire.auth.subscribe(auth => {
       if (auth && auth.uid) {
-        this.router.navigateByUrl('/about');
+        this.router.navigateByUrl('/login');
       }
     });
   }

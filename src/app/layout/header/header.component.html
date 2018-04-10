@@ -1,10 +1,13 @@
 <md-toolbar color="primary">
+
+  <!--
   <button md-icon-button [md-menu-trigger-for]="menu">
     <md-icon>more_vert</md-icon>
   </button>
-
+-->
+  <!--
   <md-menu #menu="mdMenu">
-    <button md-menu-item [routerLink]="['/about']">About</button>
+    
 
     <div *ngIf="(af.auth | async)?.uid">
       <button md-menu-item [routerLink]="['/eggs']">Eggs</button>
@@ -15,8 +18,8 @@
       <button md-menu-item [routerLink]="['/login']">Login</button>
     </div>
   </md-menu>
-
-  <span>Hachy-web</span>
+-->
+  <span>Hachy</span>
 
   <div class="fill"></div>
 
@@ -34,7 +37,7 @@
   <div *ngIf="!(af.auth | async)?.uid">
     <button
       md-mini-fab
-      md-tooltip="Login with Facebook, Google, Twitter or GitHub"
+      md-tooltip="Login with Facebook"
       tooltip-position="below"
       [routerLink]="['/login']"
     >
