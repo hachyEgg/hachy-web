@@ -34,6 +34,10 @@ export class TodosComponent extends Animations implements OnInit  {
     });
   }
 
+  public addEgg() {
+    console.log("looooooooool");
+  }
+
   public getImgURL(str: String){
     console.log("YEAH" + str)
     return ("https://firebasestorage.googleapis.com/v0/b/foodiemate-41193.appspot.com/o/image%2F" + str+"?alt=media")
