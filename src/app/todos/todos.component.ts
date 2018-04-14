@@ -42,6 +42,7 @@ export class TodosComponent extends Animations implements OnInit  {
     console.log("YEAH" + str)
     return ("https://firebasestorage.googleapis.com/v0/b/foodiemate-41193.appspot.com/o/image%2F" + str+"?alt=media")
   }
+
   public addNewTodo() {
     const item = {
       todo: this.todo,
@@ -53,7 +54,6 @@ export class TodosComponent extends Animations implements OnInit  {
     this.todos.push(item);
     this.todo = '';
   }
-
 
   public remove(item: TodoItem) {
     this.todos.remove(item.$key);

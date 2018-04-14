@@ -23,6 +23,7 @@
 -->
 
   <div class="cards">
+    <!-- To be added adding new Item online
       <div class="card" >
       <div>
         <img src="assets/upload.png" alt="Avatar" (click)="addEgg()">
@@ -33,6 +34,7 @@
         </div>
       </div>
     </div>
+    -->
 
     <div class="card" *ngFor="let item of todos | async" [class.active]="item.active" [class.done]="item.done"
       (mouseenter)="item.active = true" (mouseleave)="item.active = false">
